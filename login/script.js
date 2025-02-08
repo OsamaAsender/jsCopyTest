@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // localStorage.setItem("loggedUser", JSON.stringify(user));
 
             alert("Signed In");
-            window.location.href = "index.html";
+            window.location.href = "../index.html";
         } else if (emailExists(email)) {
             alert('Incorrect Password!');
         } else {

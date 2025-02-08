@@ -44,7 +44,7 @@ if (!currentUser) {
 
     profileImg.id = "profilePic";
     profileImg.className = "profilePic";
-    profileImg.src = "";
+    profileImg.src = "assets/imgs/user.png";
     profileImg.alt = "profile";
     profileImg.title = "profile";  
 

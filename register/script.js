@@ -46,14 +46,7 @@ registerForm.addEventListener("submit", function(event) {
         Address: address,
         flag : true,
         img: "images/user.png",
-        wishlist: [{
-            category: "",
-            description:"",
-            id:0 ,
-            image: "",
-            price: 0,
-            rating:{count:0, rate:0} ,
-        }]
+        wishlist: []
     };
 
     // Add the new user to local storage
@@ -66,13 +59,12 @@ function addNewUser(user) {
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
     // Add the new user to the array
-    users.push(user);
-
+    // users.push(user);
+    users=[...users,user];
     // Store the updated array in localStorage
     localStorage.setItem("users", JSON.stringify(users));
-    window.location.href="../login/index.html";
+    window.location.href="../index.html";
     // localStorage.setItem("loggedUser", JSON.stringify(user));
-    alert('Account Created Successfully!');
 }
 
 function validatePassword(password){
