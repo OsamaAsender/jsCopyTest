@@ -1,0 +1,446 @@
+:root {
+    --white: #FFFFFF; 
+    --soft-grey: #F5F5F5; 
+    --black: #000000; 
+    --muted-pink: #F6D1D1; 
+    --muted-blue: #B0D8F2; 
+    --mint-green: #A5D8D1; 
+    --charcoal-grey: #333333; 
+    --beige: #F5E6D3; 
+    --primaryColor: #ff274b;  
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    font-family: cursive;
+  }
+
+  html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 10rem;
+}
+::-webkit-scrollbar{
+    width: .8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primaryColor);
+    border-radius: 3rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--black);
+    margin-block: -.4rem;
+    border-radius: 3rem;
+
+}
+/* Header design */
+
+.landingPage-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 3%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 25;
+  align-items: center;
+}
+.LoginContainer{
+  display: flex ;
+  gap: 15px;
+  align-items: center;
+}
+.profilePic {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  cursor: pointer;
+  transition: .4s ease-in-out;
+
+}
+.profilePic:hover{
+  transform: scale(.9);
+  opacity: .50;
+  
+}
+.logo{
+  color: var(--primaryColor);
+  font-size: 3rem;
+  cursor: pointer;
+  transition: .6s ease;
+}
+.logo:hover,
+.logo:hover > span {
+  transform: scale(1.1);
+}
+.logo >span{
+  transition: .6s ease;
+
+}
+#ProfileLink{
+  display: none;
+}
+.homeNavBar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+#LogOutPhone{
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+.homeNavBar > a ,#LogOutPhone{
+  font-size: 2.3rem;
+  color: var(--black);
+  transition: .6s ease;
+  font-weight: 900;
+}
+.homeNavBar > a:hover , #LogOutPhone:hover{
+  transform: scale(.9);
+  color: var(--primaryColor);
+
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--primaryColor);
+  display: none;
+  cursor: pointer;
+}
+#home{
+  color: var(--primaryColor);
+}
+
+.btn1 {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: .6s;
+    color: var(--black);
+    font-weight: 700;
+
+}
+#LogIn:hover{
+      
+    background-color: var(--primaryColor);
+}
+
+#SignUp:hover{
+    
+    background-color: var(--mint-green);
+
+}
+
+
+.logoutBtn {
+  font-size: 2rem ;
+  cursor: pointer;
+}
+.logoutBtn:hover{
+  color: var(--primaryColor);   
+  background-color: transparent;
+}
+
+
+
+
+/* heroSection */
+.heroSection{
+    display: flex;
+    background-color: var(--beige);
+    gap: 10vw;
+    align-items: center;
+    /* justify-content: center; */  
+    width: 100%;
+    padding-left: 10vw;
+}
+.heroSection > img {
+    height: 80vh;
+
+}
+.heroSection > div{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.heroSection > div >h2{
+font-size: 4.5rem;
+}
+.heroSection > div >h2 >span{
+    color: var(--primaryColor);
+}
+.heroSection > div >p{
+    font-size: 1.8rem;
+}
+.btn2{
+    padding: 1.5rem 2.2rem;
+    background-color: var(--primaryColor);
+    width: fit-content;
+    color: var(--white);
+    font-size: 2rem;
+    border: .2rem solid var(--primaryColor);
+    transition: .6s;
+    
+}
+.btn2:hover{
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+
+
+/* why Shopping with us */
+
+.whyShopWithUs,.newArrivals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 8vw ;
+    padding-bottom:10vh ;
+
+}
+.whyShopWithUs > h2,.newArrivals>h2 ,.testimonialSection > h2{
+    align-self: center;
+    font-size: 4rem;
+}
+.whyShopWithUsCardContainer ,.ArrivalsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr)); 
+    gap: 2rem;
+}
+
+
+.whyShopWithUs .whyShopWithUsCard{
+height: 40vh;
+text-align: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+background-color: var(--beige);
+border-radius: 2rem;
+ }
+ .whyShopWithUs .whyShopWithUsCard >h3{
+    font-size: 3rem;
+ }
+ .whyShopWithUs .whyShopWithUsCard >p{
+    font-size: 2rem;
+ }
+
+.whyShopWithUsCard > i{
+    font-size: 5rem;
+    color: var(--primaryColor);
+}
+
+
+/* new Arrivals */
+.newArrivals{
+    background-color: var(--beige);
+    
+
+}
+.ProductCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 5rem 1rem;
+    border-radius: 3rem;
+}
+.ProductCard >h3{
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+.ProductCard >img{
+    max-width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
+
+
+
+.testimonialSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-container {
+  background-color: var(--beige);
+  color: var(--black);
+  border-radius: 2rem;
+  margin: 2rem auto;
+  padding: 3rem 5rem;
+  max-width: 60vw;
+  width: 60vw;
+
+  position: relative;
+}
+
+.fa-quote {
+  color: var(--primaryColor);
+  font-size: 3rem;
+  position: absolute;
+  top: 7rem;
+}
+
+.fa-quote-right {
+  left: 4rem;
+}
+
+.fa-quote-left {
+  right: 4rem;
+}
+
+.testimonial {
+  line-height: 2rem;
+  text-align: center;
+  font-size: 2rem;
+margin: 5rem 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+}
+
+.user .user-details {
+    margin-left: 1rem;
+  
+}
+
+.user .username {
+font-size: 1.5rem;
+  margin: 0;
+}
+.noTestimonialsMessage{
+    color: var(--primaryColor);
+    font-size: 3rem;
+}
+
+
+
+
+
+ 
+  .testimonial-container {
+    padding: 2rem 3rem;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+
+footer {
+    background-color: var(--charcoal-grey);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+  }
+
+  footer p {
+    margin: 0;
+  }
+  footer p span{
+    color: var(--primaryColor);
+  }
+
+  footer a {
+    color: var(--muted-blue);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: var(--muted-pink);
+  }
+
+
+
+
+
+  
+
+@media (max-width:768px){
+  .LoginContainer{
+    display: none;
+   }
+  .heroSection > img {
+    display: none;
+}
+
+  #menu-icon{
+      display: block;
+  }
+  .homeNavBar{
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 50%;
+      padding: 1rem 3rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-left: 2px solid var(--main-color);
+      border-bottom: 2px solid var(--main-color);
+      border-bottom-left-radius: 2rem;
+      display: none;
+      max-width: 100%;
+  }
+  #profilePic{
+      display: none;
+  }
+  #ProfileLink{
+      display: inline;
+  }
+  .homeNavBar a,.profilePic,#LogOutPhone{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+      color: var(--primaryColor);
+  }
+  .homeNavBar.active {
+      display: block;
+  }
+}

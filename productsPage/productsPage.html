@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="productsPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="home_header">
+      <h1 class="logo">ASAP</h1>
+      <nav class="homeNavBar">
+        <a id="ProfileLink" href="#">Profile</a>
+        <a id="home" href="../landingPage/landingPage.html">Home</a>
+        <a id="about" href="#about">About Us</a>
+        <a id="shop" href="#">Shop</a>
+        <a id="contuctUs" href="#">Contact Us</a>
+        <button id="LogOutPhone" onclick="handleLogOut()">Log Out</button>
+      </nav>
+
+      <div class="LoginContainer">
+        <img
+          id="profilePic"
+          class="profilePic"
+          src=""
+          alt="profile"
+          title="profile"
+        />
+        <i
+          class="fa-solid fa-arrow-right-from-bracket logoutBtn"
+          id="logoutBtn"
+        ></i>
+      </div>
+
+      <div class="btnContainer">
+        <a href="login_page" class="btn1" id="LogIn">LogIn</a>
+        <a href="rejester_page" class="btn1" id="SignUp">SignUp</a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+    <main>
+      <section class="products-container" id="products-container">
+        <!-- Product cards will be displayed here -->
+      </section>
+    </main>
+
+    <script src="productsPage.js"></script>
+  </body>
+</html>

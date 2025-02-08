@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASAP</title>
+    <link rel="stylesheet" href="landingPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header class="landingPage-header">
+      <h1 class="logo">ASAP</h1>
+      <nav class="homeNavBar">
+        <a id="ProfileLink" href="#">Profile</a>
+        <a id="home" href="#home">Home</a>
+        <a id="about" href="#about">About Us</a>
+        <a id="shop" href="../productsPage/productsPage.html">Shop</a>
+        <a id="contuctUs" href="#">Contact Us</a>
+        <button id="LogOutPhone" onclick="handleLogOut()">Log Out</button>
+      </nav>
+
+      <div class="LoginContainer">
+        <img
+          id="profilePic"
+          class="profilePic"
+          src=""
+          alt="profile"
+          title="profile"
+        />
+        <i
+          class="fa-solid fa-arrow-right-from-bracket logoutBtn"
+          id="logoutBtn"
+        ></i>
+      </div>
+
+      <div class="btnContainer">
+        <a href="login_page" class="btn1" id="LogIn">LogIn</a>
+        <a href="rejester_page" class="btn1" id="SignUp">SignUp</a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+
+    <main>
+      <section class="heroSection">
+        <img src="assets/imgs/landingPage-removebg-preview.png" alt="" />
+        <div>
+          <h2>
+            <span>Sale 20% Off</span> <br />
+            On Everything
+          </h2>
+          <p>
+            Discover the latest trends in fashion, tech, and more. Unbeatable
+            deals and quality products await you at the best prices. Shop with
+            confidence and enjoy fast shipping with a secure checkout. Whether
+            you're looking for style, gadgets, or home essentials, we’ve got you
+            covered. Don’t miss out on exclusive offers and limited-time
+            discounts. Start shopping today!
+          </p>
+          <a id="ShopBtn" href="../productsPage/productsPage.html" class="btn2"
+            >Shop Now</a
+          >
+        </div>
+      </section>
+      <section class="whyShopWithUs">
+        <h2>Why Shop With Us</h2>
+        <div class="whyShopWithUsCardContainer">
+          <div class="whyShopWithUsCard">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>
+              Get your orders delivered quickly and securely, right to your
+              doorstep.
+            </p>
+          </div>
+          <div class="whyShopWithUsCard">
+            <i class="fa-solid fa-sack-xmark"></i>
+            <h3>Free Shipping</h3>
+            <p>
+              Enjoy hassle-free shopping with no extra delivery charges on all
+              eligible orders.
+            </p>
+          </div>
+          <div class="whyShopWithUsCard">
+            <i class="fa-solid fa-medal"></i>
+            <h3>Best Quality</h3>
+            <p>
+              Shop with confidence, our products are carefully selected to
+              ensure durability and excellence.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="newArrivals" class="newArrivals"></section>
+
+      <section class="testimonialSection">
+        <h2>Testimonial Container</h2>
+        <div class="testimonial-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ASAP | All Rights Reserved By <span>ASAP Team</span></p>
+      <p>Distributed <span>By Basil</span></p>
+    </footer>
+    <script src="landingPage.js"></script>
+  </body>
+</html>
