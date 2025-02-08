@@ -1,6 +1,11 @@
 const users = JSON.parse(localStorage.getItem('users'));
 // console.log("users are ", users);
 let currentUser =users? users.find(user => user.flag === true):null;
+if (!currentUser) {
+    document.getElementById("contactUs").href="login/index.html"
+
+}
+
 function handleLogOut(){
     // console.log(users);
     

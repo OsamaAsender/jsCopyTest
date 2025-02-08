@@ -45,7 +45,7 @@ registerForm.addEventListener("submit", function(event) {
         Phonenumber: phonenumber,
         Address: address,
         flag : true,
-        img: "images/user.png",
+        img: "imgs/user.png",
         wishlist: []
     };
 

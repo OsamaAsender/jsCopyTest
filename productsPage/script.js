@@ -36,6 +36,10 @@ if (currentUser) {
   
 }else
 {
+ 
+    document.getElementById("contactUs").href="../login/index.html"
+
+
   document.getElementById("LogOutPhone").style.display="none"
 
   const LoginContainer = document.querySelector(".LoginContainer");

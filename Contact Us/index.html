@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
+    <header class="landingPage-header">
+      <h1 class="logo">ASAP</h1>
+      <nav class="homeNavBar">
+        <a id="ProfileLink" href="#">Profile</a>
+        <a id="home" href="../index.html">Home</a>
+        <a id="about" href="#about">About Us</a>
+        <a id="shop" href="../productsPage/index.html">Shop</a>
+        <a id="contactUs" href="Contact Us/index.html">Contact Us</a>
+        <button id="LogOutPhone" onclick="handleLogOut()">Log Out</button>
+      </nav>
+
+      <div class="LoginContainer">
+        <img
+          id="profilePic"
+          class="profilePic"
+          src=""
+          alt="profile"
+          title="profile"
+        />
+        <i
+          class="fa-solid fa-arrow-right-from-bracket logoutBtn"
+          id="logoutBtn"
+        ></i>
+      </div>
+    </header>
     <div class="container">
       <div class="form">
         <div class="contact-info">
@@ -18,15 +46,15 @@
           </p>
           <div class="info">
             <div class="information">
-              <img src="img/location.png" class="icon" alt="" />
+              <img src="../assets/icons/location.png" class="icon" alt="" />
               <p>92 Cherry Drive Uniondale, NY 11553</p>
             </div>
             <div class="information">
-              <img src="img/email.png" class="icon" alt="" />
+              <img src="../assets/icons/email.png" class="icon" alt="" />
               <p>lorem@ipsum.com</p>
             </div>
             <div class="information">
-              <img src="img/phone.png" class="icon" alt="" />
+              <img src="../assets/icons/phone.png" class="icon" alt="" />
               <p>07800005</p>
             </div>
           </div>

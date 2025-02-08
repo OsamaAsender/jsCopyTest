@@ -1,16 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-* {
+:root {
+  --white: #FFFFFF; 
+  --soft-grey: #F5F5F5; 
+  --black: #000000; 
+  --muted-pink: #F6D1D1; 
+  --muted-blue: #B0D8F2; 
+  --mint-green: #A5D8D1; 
+  --charcoal-grey: #333333; 
+  --beige: #F5E6D3; 
+  --primaryColor: #ff274b;  
+}
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  font-family: cursive;
 }
 
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
+html {
+  font-size: 60%;
+  overflow-x: hidden;
 }
+
+.landingPage-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 3%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 25;
+  align-items: center;
+}
+.LoginContainer{
+  display: flex ;
+  gap: 15px;
+  align-items: center;
+}
+.profilePic {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  cursor: pointer;
+  transition: .4s ease-in-out;
+
+}
+.profilePic:hover{
+  transform: scale(.9);
+  opacity: .50;
+  
+}
+.logo{
+  color: var(--primaryColor);
+  font-size: 3rem;
+  cursor: pointer;
+  transition: .6s ease;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+
+#ProfileLink{
+  display: none;
+}
+.homeNavBar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+#LogOutPhone{
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+.homeNavBar > a ,#LogOutPhone{
+  font-size: 2.3rem;
+  color: var(--black);
+  transition: .6s ease;
+  font-weight: 900;
+}
+.homeNavBar > a:hover , #LogOutPhone:hover{
+  transform: scale(.9);
+  color: var(--primaryColor);
+
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--primaryColor);
+  display: none;
+  cursor: pointer;
+}
+.logoutBtn {
+  font-size: 2rem ;
+  cursor: pointer;
+}
+.logoutBtn:hover{
+  color: var(--primaryColor);   
+  background-color: transparent;
+}
+#contactUs{
+  color: var(--primaryColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container {
   position: relative;
@@ -22,6 +137,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+margin-top: 3rem;
 }
 
 .form {
