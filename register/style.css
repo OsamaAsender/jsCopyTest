@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EAEBED;
+}
+label{
+    font-weight: 600;
+    font-size: larger;
+}
+.item{
+    margin-block: 10px;
+}
+.formContentPadding{
+    padding: 3rem;
+}
+.btnColor{
+    background-color: #806BF4;
+    color: #fff;
+    margin-top: 2rem;
+}
+.btnColor:hover{
+    background-color: #403866;
+    color:#fff ;
+}
+.CdLoginPagelink{
+    margin-top: 0.5rem;
+    margin-bot:2rem;
+}
+.radioOptions{
+    margin-inline: 2rem;
+}

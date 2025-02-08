@@ -1,0 +1,33 @@
+body{
+    background-color: #eaebed;
+}
+.divBgColor{
+    background-color: #806BF4;
+    color: white;
+}
+.btn-color{
+    background-color: #806BF4;
+    color: #fff;
+}
+.btn-color:hover{
+    background-color: #403866;
+    color: #fff;
+}
+.btn-secondary-color{
+    background-color: #fff;
+    color: #806BF4;
+}
+.btn-secondary-color:hover{
+    background-color: #403866;
+    color: #fff;
+}
+.formDivHeight{
+    height: 70vh;
+}
+form{
+    align-items: center;
+}
+.div{
+    width: 50%;
+    margin: auto;
+}
