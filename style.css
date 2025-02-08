@@ -70,7 +70,6 @@ main{
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
-  background-color: var(--primaryColor);
   cursor: pointer;
   transition: .4s ease-in-out;
 

@@ -1,6 +1,24 @@
 
+document.getElementById("profilePic").src=`../assets/imgs/user.png`
+const users = JSON.parse(localStorage.getItem('users'));
+console.log(users);
 
+let currentUser =users? users.find(user => user.flag === true):null;
 
+function handleLogOut(){
+  // console.log(users);
+  
+let updatedUsers =   users.map((user)=>{
+    if (user.Id === currentUser.Id)
+    { user.flag = false;
+      return user
+    }else
+    return user
+  });
+  // console.log(updatedUsers);
+  localStorage.setItem("users",JSON.stringify(updatedUsers));
+  window.location.href="../index.html"
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const inputs = document.querySelectorAll(".input");
@@ -82,3 +100,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const feedbacks = JSON.parse(localStorage.getItem('userFeedback'));
   console.log(feedbacks);
 });
+const menuIcon = document.querySelector('#menu-icon');    
+const navbar = document.querySelector('.homeNavBar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
