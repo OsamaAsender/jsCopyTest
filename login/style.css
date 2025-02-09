@@ -1,25 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 body{
     background-color: #eaebed;
+    font-family: 'roboto';
+
 }
 .divBgColor{
-    background-color: #806BF4;
+    background-color: #8f62d8ab;
     color: white;
 }
 .btn-color{
-    background-color: #806BF4;
+    background-color: #8f62d8ab;
     color: #fff;
+    border: 1.5px solid #8f62d8ab;
 }
 .btn-color:hover{
-    background-color: #403866;
-    color: #fff;
+    background-color: transparent;
+    color: #783ed7ab;
+    border: 1.5px solid #8f62d8ab;
+
 }
 .btn-secondary-color{
     background-color: #fff;
     color: #806BF4;
+    border: 1px solid #fff;
 }
 .btn-secondary-color:hover{
-    background-color: #403866;
+    background-color: transparent;
     color: #fff;
+    border: 1px solid #fff;
 }
 .formDivHeight{
     height: 70vh;

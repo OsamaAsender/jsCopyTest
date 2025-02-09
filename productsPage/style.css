@@ -1,4 +1,5 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+/* :root {
   --white: #FFFFFF; 
   --soft-grey: #F5F5F5; 
   --black: #000000; 
@@ -8,6 +9,17 @@
   --charcoal-grey: #333333; 
   --beige: #F5E6D3; 
   --primaryColor: #ff274b;  
+} */
+:root {
+  --white: #FFFFFF; 
+  --soft-grey: #F5F5F5; 
+  --black: #000000; 
+  --muted-pink: #F1D8DB; 
+  --muted-blue: #DBD2CC; 
+  --mint-green: #C0B5B9; 
+  --charcoal-grey: #333333; 
+  --beige:  #DEF4FC; 
+  --primaryColor: #C20D84;  
 }
 *{
   margin: 0;
@@ -18,7 +30,8 @@
   outline: none;
   list-style-type: none;
   scroll-behavior: smooth;
-  font-family: cursive;
+  font-family: 'roboto';
+
 }
 html {
   font-size: 60%;
@@ -107,12 +120,12 @@ html {
 }
 #LogIn:hover{
       
-  background-color: var(--primaryColor);
+  background-color: var(--beige);
 }
 
 #SignUp:hover{
   
-  background-color: var(--mint-green);
+  background-color: var(--muted-pink);
 
 }
 .LoginContainer{
@@ -263,7 +276,7 @@ body {
 }
 
 .wishlist-heart.liked {
-  color: red;
+  color: var(--primaryColor);
 }
 
 
@@ -272,7 +285,7 @@ body {
 
 
 .fa-h2 {
-  color: red;
+  color: var(--primaryColor);
 }
 .loveMe .fa-h2 {
   position: absolute;
