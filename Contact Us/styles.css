@@ -25,7 +25,7 @@
 }
 
 html {
-  font-size: 70%;
+  /* font-size: 70%; */
   overflow-x: hidden;
 }
 
@@ -48,8 +48,8 @@ html {
   align-items: center;
 }
 .profilePic {
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   cursor: pointer;
   transition: .4s ease-in-out;
@@ -62,7 +62,7 @@ html {
 }
 .logo{
   color: var(--primaryColor);
-  font-size: 3rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: .6s ease;
 }
@@ -85,7 +85,7 @@ html {
   display: none;
 }
 .homeNavBar > a ,#LogOutPhone{
-  font-size: 2.3rem;
+  font-size: 1.2rem;
   color: var(--black);
   transition: .6s ease;
   font-weight: 900;
@@ -96,13 +96,13 @@ html {
 
 }
 #menu-icon {
-  font-size: 3.6rem;
+  font-size: 2rem;
   color: var(--primaryColor);
   display: none;
   cursor: pointer;
 }
 .logoutBtn {
-  font-size: 2rem ;
+  font-size: 1.5rem ;
   cursor: pointer;
 }
 .logoutBtn:hover{
@@ -136,7 +136,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .form {
