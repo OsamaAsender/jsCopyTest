@@ -169,12 +169,19 @@
 
 
 #buyBtn{
-padding: 5px 6px;
+padding: 8px 6px;
 cursor: pointer;
 background-color: rgb(122, 205, 122);
 border-radius: 5px;
-}
+border: 1px solid rgb(122, 205, 122);
+transition: .4s;
 
+}
+#buyBtn:hover{
+  background-color: transparent;
+border: 1px solid rgb(122, 205, 122);
+
+}
 
 
 
