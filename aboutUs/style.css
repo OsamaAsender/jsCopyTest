@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+  width: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--primaryColor);
+  border-radius: 1.5rem;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--black);
+  margin-block: -.4rem;
+  border-radius: 1rem;
+
+}
+:root {
+  --white: #FFFFFF; 
+  --soft-grey: #F5F5F5; 
+  --black: #000000; 
+  --muted-pink: #F1D8DB; 
+  --muted-blue: #DBD2CC; 
+  --mint-green: #C0B5B9; 
+  --charcoal-grey: #333333; 
+  --beige:  #DEF4FC; 
+  --primaryColor: #C20D84;  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  font-family: 'roboto';
+}
+
+html {
+  /* font-size: 70%; */
+  overflow-x: hidden;
+}
+
+.landingPage-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 3%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  align-items: center;
+}
+.LoginContainer{
+  display: flex ;
+  gap: 15px;
+  align-items: center;
+}
+.profilePic {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+
+}
+.profilePic:hover{
+  transform: scale(.9);
+  opacity: .50;
+  
+}
+.logo{
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .6s ease;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+
+#ProfileLink{
+  display: none;
+}
+.homeNavBar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+#LogOutPhone{
+all: unset;
+cursor: pointer;
+display: none;
+}
+.homeNavBar > a ,#LogOutPhone{
+font-size: 1.3rem;
+color: var(--black);
+transition: .6s ease;
+font-weight: 900;
+}
+.homeNavBar > a:hover , #LogOutPhone:hover{
+transform: scale(.9);
+color: var(--primaryColor);
+
+}
+#menu-icon {
+font-size: 1.6rem;
+color: var(--primaryColor);
+display: none;
+cursor: pointer;
+}
+#about{
+color: var(--primaryColor);
+}
+
+.btn1 {
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: .6s;
+  color: var(--black);
+  font-weight: 700;
+
+}
+#LogIn:hover{
+    
+  background-color: var(--beige);
+}
+
+#SignUp:hover{
+  
+  background-color: var(--muted-pink);
+
+}
+
+
+.logoutBtn {
+font-size: 2rem ;
+cursor: pointer;
+}
+.logoutBtn:hover{
+color: var(--primaryColor);   
+background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+.store-info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color:#DEF4FC;
+    margin-top: 5rem;
+  
+}
+
+.store-info img {
+    width: 40%;
+    height: 300px;
+}
+
+.info-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+.ui-three-column-grid {
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    flex: 1;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.image img {
+    width: 100%;
+    height: auto;
+}
+.content {
+    padding: 15px;
+    text-align: center;
+}
+.card {
+    display: flex;
+    gap: 20px; /* مسافة بين الكروت */
+    flex-wrap: wrap; /* يجعل الكروت تنزل لسطر جديد عند ضيق الشاشة */
+    justify-content: center; /* توسيط الكروت */
+    margin: 20px;
+  }
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  @media (max-width:768px){
+    .LoginContainer{
+      display: none;
+     }
+    .heroSection > img {
+      display: none;
+  }
+  
+    #menu-icon{
+        display: block;
+    }
+    .homeNavBar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        display: none;
+        max-width: 100%;
+    }
+    #profilePic{
+        display: none;
+    }
+    #ProfileLink{
+        display: inline;
+    }
+    .homeNavBar a,.profilePic,#LogOutPhone{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--primaryColor);
+    }
+    .homeNavBar.active {
+        display: block;
+    }
+  }

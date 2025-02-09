@@ -5,22 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Store</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
   </head>
   <body>
-    <h1 class="about" style="text-align: center">About us</h1>
+    <header class="landingPage-header">
+      <h1 class="logo">ASAP</h1>
+      <nav class="homeNavBar">
+        <a id="ProfileLink" href="#">Profile</a>
+        <a id="home" href="../index.html">Home</a>
+        <a id="about" href="../aboutUs/index.html">About Us</a>
+        <a id="shop" href="../productsPage/index.html">Shop</a>
+        <a id="contactUs" href="../Contact Us/index.html">Contact Us</a>
+        <button id="LogOutPhone" onclick="handleLogOut()">Log Out</button>
+      </nav>
+
+      <div class="LoginContainer">
+        <img
+          id="profilePic"
+          class="profilePic"
+          src=""
+          alt="profile"
+          title="profile"
+        />
+        <i
+          class="fa-solid fa-arrow-right-from-bracket logoutBtn"
+          id="logoutBtn"
+        ></i>
+      </div>
+
+      <div class="btnContainer">
+        <a href="../login/index.html" class="btn1" id="LogIn">LogIn</a>
+        <a href="../register/index.html" class="btn1" id="SignUp">SignUp</a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
 
     <div class="store-info">
-      <img src="product-01-a-removebg-preview.png" alt="Clothing Store" style="width: 400px; margin: 50px;"   />
+      <img src="../assets/imgs/product-01-a-removebg-preview.png" alt="Clothing Store" style="width: 400px; margin: 50px;"   />
       <div class="info-text">
         <h2 style="color: #C20D84;">Established Since 2025</h2>
         <p style="text-align: justify;  ">
-          Welcome to [Your Brand Name], your one-stop shop for the latest trends
-          in fashion! Founded in [Year], our mission is to provide high-quality,
+          Welcome to <span style="color: #C20D84;">ASAP</span>, your one-stop shop for the latest trends
+          in fashion! Founded in 1990, our mission is to provide high-quality,
           stylish clothing that makes you look and feel amazing. Our journey
-          began when [Founder Name] realized the need for a platform that offers
+          began when <span style="color: #C20D84;">ASAP</span> realized the need for a platform that offers
           not only trendy clothing but also exceptional customer service. Over
           the years, we've grown into a passionate team dedicated to bringing
-          you the best shopping experience possible. At [Your Brand Name], we
+          you the best shopping experience possible. At <span style="color: #C20D84;">ASAP</span>, we
           believe in the power of fashion to express individuality. Our
           collections are carefully curated to ensure they reflect the latest
           styles while remaining timeless. We're proud of our commitment to
@@ -33,7 +77,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="basil.avif" alt="Avatar" style="width:300px;height:300px;">
+          <img src="../assets/imgs/basil.avif" alt="Avatar" style="width:300px;height:300px;">
         </div>
         <div class="flip-card-back">
           <h1>Basil</h1> 
@@ -45,7 +89,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="sawsan.jpg" alt="Avatar" style="width:300px;height:300px;">
+          <img src="../assets/imgs/sawsan.jpg" alt="Avatar" style="width:300px;height:300px;">
         </div>
         <div class="flip-card-back">
           <h1>Sawsan</h1> 
@@ -57,7 +101,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="abdullah.jpg" alt="Avatar" style="width:300px;height:300px;">
+          <img src="../assets/imgs/abdullah.jpg" alt="Avatar" style="width:300px;height:300px;">
         </div>
         <div class="flip-card-back">
           <h1>Abdullah</h1> 
@@ -69,7 +113,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="ammar.jpg" alt="Avatar" style="width:300px;height:300px;">
+          <img src="../assets/imgs/ammar.jpg" alt="Avatar" style="width:300px;height:300px;">
         </div>
         <div class="flip-card-back">
           <h1>Ammar</h1> 
@@ -81,7 +125,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="osama.jpg" alt="Avatar" style="width:300px;height:300px;">
+          <img src="../assets/imgs/osama.jpg" alt="Avatar" style="width:300px;height:300px;">
         </div>
         <div class="flip-card-back">
           <h1>Osama</h1> 
