@@ -32,6 +32,7 @@ if (!localStorage.getItem("users")) {
     const productsContainer = document.getElementById("productsContainer");
     productsContainer.innerHTML = "";
     let total = 0;
+  let str ="aaa";
   
     user.wishlist.forEach((item, index) => {
         const card = document.createElement("div");
@@ -41,7 +42,7 @@ if (!localStorage.getItem("users")) {
             <img src="${item.image}" alt="Product Image">
             <div class="card-content">
                 <h3>${item.category}</h3>
-                <p>${item.description}</p>
+                <p>${item.description.slice(0,100)}...</p>
                 <p class="price">$${item.price.toFixed(2)}</p>
                 <div class="quantity-controls">
                     <button class="decrease" data-index="${index}">➖</button>

@@ -168,7 +168,12 @@
 
 
 
-
+#buyBtn{
+padding: 5px 6px;
+cursor: pointer;
+background-color: rgb(122, 205, 122);
+border-radius: 5px;
+}
 
 
 
@@ -274,7 +279,7 @@
     flex: 0;
     padding: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
   }
   .quantity-controls {
     display: flex;
