@@ -11,87 +11,99 @@
     <title>Sign-Up / Register</title>
   </head>
   <body>
-    <div class="formContentPadding w-25 m-auto mt-5 shadow-sm rounded bg-white">
-      <h2 class="text-center"> Create a Account</h2>
+    <div class="containerF mt-5">
+      <div class=" ">
+        <h2 class="text-center">Create a Account</h2>
 
-      <div class="item" class="container">
-        <form action="" id="registerForm">
+        <div class="item" class="container">
+          <form action="" id="registerForm">
+            <row class="row">
+              <div class="item col">
+                <label class="form-label" for="customerName">Name:</label>
+                <input
+                  type="text"
+                  id="customerName"
+                  class="form-control"
+                  placeholder="enter your name"
+                  required
+                />
+              </div>
+              <div class="item col">
+                <label class="form-label" for="customerEmail"
+                  >Email Address:</label
+                >
+                <input
+                  type="email"
+                  id="customerEmail"
+                  class="form-control"
+                  placeholder="enter your email"
+                  required
+                />
+              </div>
+            </row>
 
-          <row class="row">
-            <div class="item col">
-              <label class="form-label" for="customerName">Name:</label>
-              <input
-                type="text"
-                id="customerName"
-                class="form-control"
-                placeholder="enter your name"
-                required
-              />
+            <div class="row">
+              <div class="item col">
+                <label class="form-label" for="Pass">Password:</label>
+                <input
+                  type="password"
+                  id="Pass"
+                  class="form-control"
+                  placeholder="enter your password"
+                  required
+                />
+              </div>
+
+              <div class="item col">
+                <label class="form-label" for="Confirm"
+                  >Confirm Password:</label
+                >
+                <input
+                  type="password"
+                  id="Confirm"
+                  class="form-control"
+                  placeholder="confirm password"
+                  required
+                />
+              </div>
             </div>
-          </row>
 
-          <row class="row">
-            <div class="item col">
-              <label class="form-label" for="customerEmail">Email Address:</label>
-              <input
-                type="email"
-                id="customerEmail"
-                class="form-control"
-                placeholder="enter your email"
-                required
-              />
+            <div class="row">
+              <div class="item col">
+                <label class="form-label" for="customerNumber"
+                  >Phone Number:</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="customerNumber"
+                  placeholder="enter your number"
+                  required
+                />
+              </div>
+
+              <div class="item col">
+                <label class="form-label" for="address">Address:</label>
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="address"
+                  required
+                />
+              </div>
             </div>
-          </row>
 
-          <row class="row">
-            <div class="item col">
-              <label class="form-label" for="customerNumber">Phone Number:</label>
-              <input
-                type="tel"
-                class="form-control"
-                id="customerNumber"
-                placeholder="enter your number"
-                required
-              />
+            <div id="emailHelp" class="form-text CdLoginPagelink">
+              <button type="submit" class="btn btnColor">Create Account</button>
+
+              Already Have An Account? <a href="../login/index.html">Sign-in</a>
             </div>
-<div>
-  <div class="item">
-    <label class="form-label" for="Pass">Password:</label>
-    <input
-      type="password"
-      id="Pass"
-      class="form-control"
-      placeholder="enter your password"
-      required
-    />
-  </div>
-
-  <div class="item">
-    <label class="form-label" for="Confirm">Confirm Password:</label>
-    <input
-      type="password"
-      id="Confirm"
-      class="form-control"
-      placeholder="confirm password"
-      required
-    />
-  </div>
-
-  <div class="item">
-    <label class="form-label" for="address">Address:</label>
-    <input type="text" id="address" class="form-control" placeholder="address" required/>
-  </div>
-
-</div>
-
-          <button type="submit" style="width: 100%" class="btn btnColor" >Create Account</button>
-
-          <div id="emailHelp" class="form-text CdLoginPagelink">
-            Already Have An Account? <a href="../login/index.html">Sign-in</a>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

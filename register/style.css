@@ -8,30 +8,64 @@
 }
 body{
     background-color: #EAEBED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 label{
     font-weight: 600;
     font-size: larger;
 }
+.containerF{
+    width: 50vw;
+    font-size: 70%;
+  backdrop-filter: blur(10px);
+    background-color: #8f62d87c;
+    padding: 3rem;
+    border-radius: 1.3rem;
+    color: #fff;
+}
 .item{
-    margin-block: 10px;
+    margin-block: 7px;
 }
 .formContentPadding{
     padding: 3rem;
 }
 .btnColor{
-    background-color: #806BF4;
-    color: #fff;
+    background-color: #EAEBED;
+    color: #8f62d87c;
     margin-top: 2rem;
+    width: 10rem;
+    border: 1px solid #8f62d87c;
+    
 }
 .btnColor:hover{
-    background-color: #403866;
+    background-color: transparent;
     color:#fff ;
+    border: 1px solid #fff;
+
 }
 .CdLoginPagelink{
     margin-top: 0.5rem;
-    margin-bot:2rem;
 }
 .radioOptions{
     margin-inline: 2rem;
+}
+#emailHelp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-size: larger;
+}
+#emailHelp >a {
+    color: #7224ee;
+    font-weight: 900;
+  transition: .4s ease-in-out;
+
+}
+#emailHelp >a:hover{
+    transform: scale(.8);
 }

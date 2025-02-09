@@ -39,3 +39,53 @@ form{
     width: 50%;
     margin: auto;
 }
+.loginDivWidth{
+    width: 70rem;
+}
+
+@media (max-width: 991px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formDivHeight {
+        height: auto;
+    }
+
+    .LoginDiv, .RegisterDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .RegisterDiv {
+        margin-top: 20px; 
+        margin: 0px;
+    }
+
+    .LoginDiv {
+        margin-top: 20px; 
+        margin: 0px;
+    }
+
+    #forgetPassword {
+        margin-top: 10px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 576px)
+ {
+    .div {
+        width: 100%;
+    }
+
+    .formDivHeight {
+        height: auto;
+    }
+
+    .d-flex {
+        align-items: center;
+    }
+}
