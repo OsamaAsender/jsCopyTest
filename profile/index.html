@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header class="landingPage-header">
+      <h1 class="logo">ASAP</h1>
+      <nav class="homeNavBar">
+        <a id="ProfileLink" href="#">Profile</a>
+        <a id="home" href="../index.html">Home</a>
+        <a id="about" href="../aboutUs/index.html">About Us</a>
+        <a id="shop" href="../productsPage/index.html">Shop</a>
+        <a id="contactUs" href="../Contact Us/index.html">Contact Us</a>
+        <button id="LogOutPhone" onclick="handleLogOut()">Log Out</button>
+      </nav>
+
+      <div class="LoginContainer">
+        <img
+          id="profilePic"
+          class="profilePic"
+          src=""
+          alt="profile"
+          title="profile"
+        />
+        <i
+          class="fa-solid fa-arrow-right-from-bracket logoutBtn"
+          id="logoutBtn"
+        ></i>
+      </div>
+
+      <div class="btnContainer">
+        <a href="../login/index.html" class="btn1" id="LogIn">LogIn</a>
+        <a href="../register/index.html" class="btn1" id="SignUp">SignUp</a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-left">
+        <div class="image-preview">
+          <img id="profileImg" src="" alt="Profile Picture" />
+        </div>
+        <button id="uploadImgBtn" class="upload-btn">Upload Img</button>
+        <input type="file" id="profileImageInput" accept="image/*" hidden />
+      </div>
+      <div class="profile-right">
+        <h2 id="userName"></h2>
+        <p id="userEmail"></p>
+        <p id="userPhone"></p>
+        <p id="userAddress"></p>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div>
+      <h1>wish list</h1>
+      <div class="products-container" id="productsContainer"></div>
+
+      <!-- Checkout Section -->
+      <div class="checkout">
+        <p id="totalPrice">Total: $0</p>
+        <button id="buyBtn">Buy Now</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

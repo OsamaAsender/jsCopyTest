@@ -1,3 +1,8 @@
+function goToProfile(){
+  
+    window.location.href='../profile/index.html'
+
+}
 
 document.getElementById("profilePic").src=`../assets/imgs/user.png`
 const users = JSON.parse(localStorage.getItem('users'));

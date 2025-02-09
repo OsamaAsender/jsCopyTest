@@ -1,3 +1,6 @@
+
+
+
 const users = JSON.parse(localStorage.getItem('users'));
 // console.log("users are ", users);
 let currentUser =users? users.find(user => user.flag === true):null;
@@ -39,7 +42,7 @@ if (!currentUser) {
     btnContainer.style.display="none"
     
     let LoginContainer= document.querySelector(".LoginContainer")
-
+    let id_data=document.getElementById("Login_Container_id")
     let logOut= document.getElementById("logoutBtn")
     
     logOut.addEventListener("click",handleLogOut)
@@ -51,8 +54,10 @@ if (!currentUser) {
     profileImg.className = "profilePic";
     profileImg.src = "assets/imgs/user.png";
     profileImg.alt = "profile";
-    profileImg.title = "profile";  
-
+    profileImg.title = "profile";
+    profileImg.addEventListener('click',function(){
+        window.location.href='profile/index.html'
+    })
     LoginContainer.append(profileImg,logOut)
 }
 

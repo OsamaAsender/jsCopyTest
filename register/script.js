@@ -1,3 +1,5 @@
+
+
 let numberOfUsers = localStorage.getItem('users')? JSON.parse(localStorage.getItem('users')) : [];
 const registerForm = document.getElementById("registerForm");
 

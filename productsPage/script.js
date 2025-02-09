@@ -1,3 +1,9 @@
+function goToProfile(){
+  window.location.href='../profile/index.html'
+
+}
+  
+  
   const API_URL = "https://fakestoreapi.com/products";
   let myProducts= []
   function handleLogOut(){

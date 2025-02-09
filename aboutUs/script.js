@@ -60,6 +60,8 @@ if (!currentUser) {
     profileImg.src = "../assets/imgs/user.png";
     profileImg.alt = "profile";
     profileImg.title = "profile";  
-
+    profileImg.addEventListener('click',function(){
+        window.location.href='../profile/index.html'
+    })
     LoginContainer.append(profileImg,logOut)
 }
